@@ -1,8 +1,11 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Fyoxa — портфолио</title>
+<title>Fyoxa Portfolio</title>
+
+
+  
 <style>
 body {
   margin: 0;
@@ -13,14 +16,18 @@ body {
   color: #4B0082;
   overflow-x: hidden;
 }
+
+  
 body.home {
   max-width: 100%;
   margin: 0 auto;
 }
+
 body:not(.home) {
   max-width: 1500px;
   margin: 0 auto;
 }
+
 section {
   min-height: 100vh;
   padding: 60px 20px;
@@ -29,7 +36,6 @@ section {
   box-sizing: border-box;
   text-align: center;
 }
-
 
 #first-section {
   display: flex;
@@ -46,14 +52,13 @@ section {
   gap: 20px;
   padding-top: 600px;
 }
+
 #first-section img {
   width: 180px;
   max-width: 100%;
   height: auto;
   display: block;
 }
-
-
 
 .hidden-section {
   opacity: 0;
@@ -63,14 +68,15 @@ section {
   overflow: hidden;
   pointer-events: none;
 }
+
 h1, h2 { color: #4B0082; }
 h1 { font-size: 2.5rem; margin-bottom: 15px; }
 p { font-size: 1.2rem; max-width: 850px; }
 
 
 
-
-/* меню пк */
+  
+/*меню пк*/
 .menu-box {
   background: linear-gradient(135deg, #F7E6FF, #FFE6F2);
   padding: 25px 30px;
@@ -82,7 +88,9 @@ p { font-size: 1.2rem; max-width: 850px; }
   transform: translateY(-40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 .menu-box.show { opacity: 1; transform: translateY(0); }
+
 .menu-box select {
   padding: 14px 20px;
   border-radius: 12px;
@@ -94,7 +102,7 @@ p { font-size: 1.2rem; max-width: 850px; }
   cursor: pointer;
 }
 
-
+  
 .content-block {
   display: none;
   opacity: 0;
@@ -105,12 +113,13 @@ p { font-size: 1.2rem; max-width: 850px; }
   margin-top: 20px;
   text-align: left;
 }
+
 .content-block.show {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
-
+  
 
 table {
   width: 100%;
@@ -121,6 +130,7 @@ table {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   margin-top: 20px;
 }
+
 th, td { padding: 14px; }
 th { background-color: #EBD6FF; text-align: left; }
 tr:nth-child(even) { background-color: #FFF1F9; }
@@ -134,6 +144,9 @@ tr:nth-child(odd) { background-color: #F6E8FF; }
   padding-bottom: 10px;
   flex-wrap: nowrap;
 }
+
+  
+
 .swipe-gallery img, .swipe-gallery video {
   width: 100%;
   max-width: 150px;
@@ -143,10 +156,18 @@ tr:nth-child(odd) { background-color: #F6E8FF; }
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
-.swipe-gallery img:hover, .swipe-gallery video:hover { transform: scale(1.05); }
 
-video { width: 100%; border-radius: 16px; margin-top: 25px; }
+.swipe-gallery img:hover, .swipe-gallery video:hover {
+  transform: scale(1.05);
+}
 
+video {
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 25px;
+}
+
+  
 .notes {
   background: linear-gradient(135deg, #EEE4FF, #FFE8F3);
   padding: 25px;
@@ -158,7 +179,11 @@ video { width: 100%; border-radius: 16px; margin-top: 25px; }
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
-.notes.show { opacity: 1; transform: translateY(0); }
+
+.notes.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 .art-block {
   background: linear-gradient(135deg, #FFE0F4, #F3E0FF);
@@ -172,9 +197,11 @@ video { width: 100%; border-radius: 16px; margin-top: 25px; }
   transform: translateY(40px);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 .art-block.show { opacity: 1; transform: translateY(0); }
 
-/* телефон */
+
+  
 @media (max-width: 600px) {
   .first-content { padding-top: 0; }
   body { font-size: 10px; }
@@ -187,25 +214,31 @@ video { width: 100%; border-radius: 16px; margin-top: 25px; }
   #first-section img { width: 100px; }
   .swipe-gallery img, .swipe-gallery video { max-width: 100px; flex-shrink: 1; }
   .menu-box { padding: 18px 22px; font-size: 1rem; margin-bottom: 15px; margin-top: 450px; }
+  .box, .card { padding: 20px; margin-bottom: 20px; }
+  table td, table th { padding: 10px; }
+  img { max-width: 100%; height: auto; display: block; margin: 15px auto; }
+  video { max-width: 100%; height: auto; border-radius: 16px; }
+  ul { padding-left: 18px; }
 }
 </style>
+
+  
 </head>
-
-
-
 <body>
 
-
-
+  
 <section id="first-section">
   <div class="first-content">
     <h1>Привет! Я fyoxa, добро пожаловать на мой сайт-портфолио! :3</h1>
     <img src="static/hellokitty.gif">
   </div>
-  <p>Я занимаюсь видеомонтажом и анимацией в After Effects, Alight Motion...</p>
+
+  
+  <p>Я занимаюсь видеомонтажом и анимацией в After Effects, Alight Motion, красивые эффекты и переходы. Также я увлекаюсь рисованием!</p>
   <a href="#second" style="margin-top:20px; font-size:1.2rem; color:#4B0082;">↓ Листай вниз ↓</a>
 </section>
 
+  
 <section id="second">
   <div class="menu-box">
     <h2>Что вас интересует?</h2>
@@ -216,7 +249,9 @@ video { width: 100%; border-radius: 16px; margin-top: 25px; }
     </select>
   </div>
 
-  <!-- ЭДИТЫ -->
+
+
+  
   <div id="edits-block" class="content-block">
     <h1>Эдиты</h1>
     <div class="swipe-gallery">
@@ -227,83 +262,92 @@ video { width: 100%; border-radius: 16px; margin-top: 25px; }
         <video controls><source src="static/edits/5.mp4" type="video/mp4"></video>
     </div>
 
+    
     <div class="notes show">
       <b>Важно знать:</b><br>
-      • Цена и дедлайн зависит от сложности.<br>
-      • Предоплата 50–100%.<br>
-      • Оплата: украинский/испанский банк или донат.<br><br>
+      • Цена и дедлайн может меняться в зависимости от сложности работы (1-3 дня).<br>
+      • Беру предоплату 50/100%<br>
+      • Оплата через украинский или испанский банк, или донат.<br><br>
 
-      <b>Анкета:</b><br>
-      1. Видео готовой работы 🎀<br>
-      2. Какой вариант заказали 🎀<br>
-      3. Отзыв 🎀<br>
-      4. Можно ли публиковать? 🎀<br>
-      5. Цена и способ оплаты 🎀
+      <b>Новая анкета для заполнения комментария:</b><br>
+      1. Видео готовой работы (очень желательно) 🎀<br>
+      2. Какой вариант эдита вы заказали? 🎀 (1-4/свой вариант)<br>
+      3. Впечатление о работе и о редакторе 🎀<br>
+      4. Может ли редактор по желанию публиковать заказанную вами работу? 🎀 (с отметкой вас)<br>
+      5. Цена данной работы и способ оплаты 🎀 (например донатом)
     </div>
 
     <table>
       <tr><th>Услуга</th><th>Цена</th></tr>
-      <tr><td>Анимация артов</td><td>15–20€</td></tr>
-      <tr><td>Переходы с эффектами</td><td>8€</td></tr>
-      <tr><td>Монтаж с переходами</td><td>5€</td></tr>
-      <tr><td>Анимация персонажей</td><td>10€</td></tr>
+      <tr><td>Анимация артов с эффектами и цветокоррекцией</td><td>15–20€</td></tr>
+      <tr><td>Переходы с эффектами и цветокоррекцией</td><td>8€</td></tr>
+      <tr><td>Монтаж видео с продвинутыми переходами и эффектами</td><td>5€</td></tr>
+      <tr><td>Анимация персонажей с эффектами и опциональной 3D камерой</td><td>10€</td></tr>
     </table>
 
-    <p>Заказать можно здесь: <a href="https://t.me/m/SGLiMaGbZjgy" target="_blank">тык :3</a></p>
+    <p style="margin-top:15px;">Заказать коммишку можно написав мне в лс! <a href="https://t.me/m/SGLiMaGbZjgy" target="_blank">здесь :3</a></p>
   </div>
 
-  <!-- АРТЫ -->
+
+
+  
   <div id="art-block" class="content-block">
     <h1>Коммишены на арты</h1>
     <div class="swipe-gallery">
-        <img src="static/arts/1.jpg">
-        <img src="static/arts/2.jpg">
-        <img src="static/arts/3.jpg">
-        <img src="static/arts/4.jpg">
-        <img src="static/arts/5.jpg">
+        <img src="static/arts/1.jpg" alt="Art 1">
+        <img src="static/arts/2.jpg" alt="Art 2">
+        <img src="static/arts/3.jpg" alt="Art 3">
+        <img src="static/arts/4.jpg" alt="Art 4">
+        <img src="static/arts/5.jpg" alt="Art 5">
     </div>
 
+    
     <div class="notes show">
       <b>Важно знать:</b><br>
-      • Цена зависит от сложности.<br>
-      • Не рисую стариков и детей.<br>
-      • Предоплата 50–100%.<br><br>
+      • Цена может меняться в зависимости от сложности работы.<br>
+      • Я не рисую: стариков и детей.<br>
+      • Беру предоплату 50/100%<br>
+      • Оплата через украинский или испанский банк, или донат.<br><br>
 
-      <b>За договорную цену могу:</b><br>
-      • Отправить традиш почтой.<br>
+      😉<b>За договорную цену могу:</b><br>
+      • Отправить рисунок почтой, если это традиш / отправить бокс с рисунками и мерчем на определённый фандом.<br>
       • Нарисовать стикерпак.<br>
-      • Анимировать арт.<br>
-      • Нарисовать ОС.<br>
-      • Нарисовать фурри/гуро.
+      • Нарисовать и анимировать коммишку.<br>
+      • Нарисовать ОС под ваше описание.<br>
+      • Нарисовать фурри, гуро или что-то на подобии этого.
     </div>
 
     <table>
       <tr><th>Услуга</th><th>Цена</th></tr>
-      <tr><td>Хед</td><td>4€</td></tr>
-      <tr><td>Халф</td><td>7€</td></tr>
-      <tr><td>Фулл</td><td>10€</td></tr>
-      <tr><td>Скетч</td><td>договорная</td></tr>
+      <tr><td>Хед (портрет головы)</td><td>4€</td></tr>
+      <tr><td>Халф (полуфигурка)</td><td>7€</td></tr>
+      <tr><td>Фулл (полная фигура)</td><td>10€</td></tr>
+      <tr><td>Скетч</td><td>по договорённости</td></tr>
     </table>
 
-    <p>Заказать: <a href="https://t.me/m/SGLiMaGbZjgy" target="_blank">тык :3</a></p>
+    <p style="margin-top:15px;">Заказать коммишку можно написав мне в лс! <a href="https://t.me/m/SGLiMaGbZjgy" target="_blank">здесь :3</a></p>
   </div>
+  
 </section>
 
 
 
+  
 <script>
 const selector = document.getElementById("selector");
 const editsBlock = document.getElementById("edits-block");
 const artBlock = document.getElementById("art-block");
 const menuBox = document.querySelector(".menu-box");
 
-const observer = new IntersectionObserver(entries => {
+const secondSectionObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
-    if(entry.isIntersecting){ menuBox.classList.add("show"); }
+    if(entry.isIntersecting){
+      menuBox.classList.add("show");
+    }
   });
 }, { threshold: 0.3 });
 
-observer.observe(document.getElementById("second"));
+secondSectionObserver.observe(document.getElementById("second"));
 
 selector.addEventListener("change", () => {
     document.getElementById("first-section").classList.add("hidden-section");
@@ -327,8 +371,9 @@ selector.addEventListener("change", () => {
         document.getElementById("second").scrollIntoView({ behavior: "smooth" });
     }, 300);
 });
-
 </script>
 
+
+  
 </body>
 </html>
